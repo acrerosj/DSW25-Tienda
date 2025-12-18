@@ -14,6 +14,7 @@
         <tr>
             <th>ID</th>
             <th>Nombre</th>
+            <th>Categoría</th>
             <th>Descripción</th>
             <th>Precio</th>
             <th>Stock</th>
@@ -25,6 +26,7 @@
             <tr>
                 <td>{{ $product->id }}</td>
                 <td>{{ $product->name }}</td>
+                <td>{{ $product->category->name }}</td>
                 <td>{{ $product->description }}</td>
                 <td>{{ number_format($product->price, 2) }}€</td>
                 <td>{{ $product->stock }}</td>
